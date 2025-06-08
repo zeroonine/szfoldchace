@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Win a Samsung Galaxy S24 Ultra!</title>
+  <meta name="description" content="Join our exclusive sweepstakes and stand a chance to win a brand new Samsung Galaxy S24 Ultra! Limited offer, enter now.">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #f1c40f 0%, #16a085 100%);
+      min-height: 100vh;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .container {
+      max-width: 400px;
+      width: 96vw;
+      background: #fff;
+      margin: 32px auto 0 auto;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+      padding: 24px 18px 32px 18px;
+      text-align: center;
+    }
+    .prize-img {
+      width: 90%;
+      max-width: 270px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.13);
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 1.6em;
+      margin: 0 0 10px 0;
+      color: #1abc9c;
+    }
+    .desc {
+      font-size: 1.08em;
+      margin-bottom: 18px;
+    }
+    .steps {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 16px;
+      background: #fafdff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      padding: 18px 8px;
+      margin-bottom: 22px;
+      margin-top: 0;
+      max-width: 430px;
+    }
+    .step-item {
+      flex: 1 1 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      border-radius: 12px;
+      padding: 12px 8px 10px 8px;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+      transition: transform 0.13s;
+    }
+    .step-item:hover {
+      transform: translateY(-3px) scale(1.04);
+      box-shadow: 0 4px 18px rgba(44,62,80,0.11);
+    }
+    .step-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg,#1abc9c 60%,#16a085 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.5em;
+      margin-bottom: 8px;
+      box-shadow: 0 2px 8px rgba(30,144,255,0.10);
+    }
+    .step-text {
+      font-size: 1em;
+      font-weight: 500;
+      color: #1a222b;
+      text-align: center;
+      line-height: 1.35;
+    }
+    @media (max-width: 600px) {
+      .steps {
+        flex-direction: column;
+        gap: 12px;
+        max-width: 98vw;
+        padding: 12px 2vw;
+      }
+      .step-item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 8px;
+      }
+      .step-icon {
+        margin-bottom: 0;
+        margin-right: 13px;
+      }
+      .step-text {
+        text-align: left;
+        font-size: 0.98em;
+      }
+    }
+    .timer {
+      background: #e74c3c;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 4px 10px;
+      display: inline-block;
+      margin-bottom: 18px;
+      font-size: 1.05em;
+      letter-spacing: 1px;
+    }
+    .fields { margin-top: 6px; }
+    input[type="text"], input[type="email"] {
+      width: 95%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+      box-sizing: border-box;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    button {
+      width: 100%;
+      background: linear-gradient(90deg,#1abc9c 20%,#16a085 100%);
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 7px;
+      padding: 12px 0;
+      margin-top: 9px;
+      font-size: 1.09em;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: linear-gradient(90deg,#16a085 20%,#1abc9c 100%);
+    }
+    .note {
+      color: #777;
+      font-size: 0.92em;
+      margin-top: 17px;
+    }
+    @media (max-width: 450px) {
+      .container { padding: 12px 2vw 24px 2vw; }
+      .prize-img { max-width: 200px; }
+      h1 { font-size: 1.25em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://images.samsung.com/id/smartphones/galaxy-s24-ultra/images/galaxy-s24-ultra-highlights-kv.jpg" alt="Samsung Galaxy S24 Ultra" class="prize-img">
+    <h1>Win a Samsung Galaxy S24 Ultra!</h1>
+    <div class="desc">
+      Join our exclusive sweepstakes! One lucky winner will get a brand new <b>Samsung Galaxy S24 Ultra</b>. Enter now for your chance to win—it's free!
+    </div>
+    <div class="timer" id="timer">
+      Time left: 09:59
+    </div>
+    <div class="steps">
+      <div class="step-item">
+        <span class="step-icon">&#10003;</span>
+        <span class="step-text">Enter your full name & email</span>
+      </div>
+      <div class="step-item">
+        <span class="step-icon">&#10003;</span>
+        <span class="step-text">Tap "ENTER NOW"</span>
+      </div>
+      <div class="step-item">
+        <span class="step-icon">&#10003;</span>
+        <span class="step-text">Wait for winner announcement via email</span>
+      </div>
+    </div>
+    <div class="fields">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Active Email" required>
+      <button type="button" onclick="window.location.href='https://yq7yv.bemobtrcks.com/click';">ENTER NOW</button>
+    </div>
+    <div class="note">
+      * The winner will be contacted via email.<br>
+      Limited offer for Android users worldwide.
+    </div>
+  </div>
+  <script>
+    // Countdown timer (10 minutes)
+    let timer = 9*60+59, timerDiv = document.getElementById("timer");
+    setInterval(function(){
+      let m = Math.floor(timer/60), s = timer%60;
+      timerDiv.textContent = `Time left: ${m.toString().padStart(2,"0")}:${s.toString().padStart(2,"0")}`;
+      if(timer > 0) timer--; 
+    }, 1000);
+  </script>
+</body>
+</html>
